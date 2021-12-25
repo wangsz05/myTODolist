@@ -8,7 +8,29 @@ https://xz.aliyun.com/t/10693
 
 
 
+ $('#button-addon5').click(() => {
+    const input = $('#form-control5').val();
+    // $('#contents4').children('.col').html('<div class="row">'+ input +'</div>');
+    document.getElementById('contents5').children[0].innerHTML = '<div class="row">' + input + '</div>';
+  })
 
+<div class="row content-block">
+                  <div class="col">
+                    <div class="row title bold">example innerHTML</div>
+                    <div class="row input-group mb-3">
+                      <input type="text" id="form-control5" class="form-control" placeholder="填写内容...">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon5">Submit</button>
+                      </div>
+                    </div>
+                    <div id="contents5" class="row contents">
+                      <div class="col border">
+                        <div class="row">输入列表：</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
 
 
 
